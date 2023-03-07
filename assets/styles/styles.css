@@ -69,7 +69,7 @@ body{
 
 .social__midia__links{
   display: flex;
-  height: 50px;
+  height: 40px;
   width: fit-content;
   gap: 40px;
   padding: 8px;
