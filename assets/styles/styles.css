@@ -1,0 +1,127 @@
+:root{
+--fonte-principal: font-family: 'Times New Roman', sans-serif;
+--bg-color: background: rgb(10,38,71); background: linear-gradient(90deg, rgba(10,38,71,1) 0%, rgba(10,38,71,1) 35%, rgba(20,66,114,1) 100%);
+--secundary-color: #2C74B3;
+--third-color: gray;
+--bg--color--header: #0A2647;
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--bg-color);
+}
+.header__container{
+    background-color: var(--bg--color--header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    border-bottom: thick double var(--secundary-color);
+    position: fixed;
+    width: 100%;
+}
+
+.logo__container{
+    height: 13vh;
+    padding-left: 50px;
+}
+
+.icon-image{
+    height: 100%;
+}
+
+.logo__item{
+  height: 100%;
+}
+
+.nav__container{
+  display: flex;
+  font-size: 24px;
+  gap: 50px;
+  padding: 40px 200px 0 0;
+}
+
+.nav__container li a{
+  text-decoration: none;
+  color: #2C74B3;
+  transition: ease-in 0.2s;
+}
+
+.nav__container li a:hover{
+  color: white;
+  padding: 5px;
+  border: solid 1px white;
+  border-radius: 10px;
+}
+
+.apresentation__container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 5% 0 10% 20%;
+}
+
+.apresentation__text{
+  width: 48%;
+}
+
+.apresentation__container > p > b, .apresentation__container > div > p > b, .apresentation__text{
+  color: var(--secundary-color);
+  font-size: 1.7rem;
+}
+.apresentation__container p:nth-child(2), .apresentation__container p:nth-child(3){
+  font-size: 4rem;
+}
+
+.apresentation__container p:nth-child(3), .apresentation__container div:nth-child(4){
+  color: var(--third-color);
+}
+
+.apresentation__container p:nth-child(2){
+  letter-spacing: 4px;
+  color: white;
+}
+
+.apresentation__container{
+  padding-top: 15%;
+  border-bottom: thick double var(--secundary-color);
+}
+
+.project__container > h2{
+ text-align: start;
+ padding: 3% 0 5% 20%;
+ font-size: 5rem;
+ color: var(--secundary-color);
+}
+
+.project__container ul li a{
+  text-decoration: none;
+  color: var(--secundary-color);
+  font-size: 2rem;
+}
+
+.project__container__links{
+  display: flex;
+  gap: 100px;
+  padding: 0 0 5% 20%;
+}
+
+.project__container__links li a{
+  transition: ease-in 0.5s;
+}
+
+.project__container__links li a:hover{
+  color: white;
+}
+
+.project__container{
+  border-bottom: thick double var(--secundary-color);
+}
+
+footer{
+  height: 100px;
+  text-align: center;
+  padding-top: 100px;
+  color: var(--secundary-color);
+  background-color: var(--bg--color--header);
+}
