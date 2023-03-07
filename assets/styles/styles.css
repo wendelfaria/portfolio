@@ -15,15 +15,15 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 13vh;
+    height: 150px;
     border-bottom: thick double var(--secundary-color);
     position: fixed;
     width: 100%;
+    position: relative;
 }
 
 .logo__container{
     height: 13vh;
-    padding-left: 50px;
 }
 
 .icon-image{
@@ -34,11 +34,16 @@ body{
   height: 100%;
 }
 
+.header__nav__container{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3% 10% 0 0;
+}
 .nav__container{
   display: flex;
   font-size: 24px;
-  gap: 50px;
-  padding: 40px 200px 0 0;
+  gap: 130px;
 }
 
 .nav__container li a{
@@ -54,6 +59,48 @@ body{
   border-radius: 10px;
 }
 
+.social__midia__container{
+  background-color: #144272;
+  border-bottom: double thick var(--secundary-color);
+  display: flex;
+  justify-content: flex-end;
+  padding: 1% 11% 1% 0;
+}
+
+.social__midia__links{
+  display: flex;
+  height: 50px;
+  width: fit-content;
+  gap: 40px;
+  padding: 8px;
+  border: 3px solid var(--secundary-color);
+  border-radius: 20px;
+}
+
+.social__midia__links > a{
+  transition:linear 0.2s;
+}
+
+.social__midia__links > a:hover{
+  border: 1px solid black;
+}
+
+.social__midia__links__linkedin:hover{
+  border-radius: 7px;
+}
+
+.social__midia__links__github:hover{
+  border-radius: 30px;
+  padding: 1px;
+  background-color: black;
+}
+
+.social__midia__links__facebook:hover{
+  border-radius: 30px;
+}
+.social__midia__links> a >img{
+  height: 100%;
+}
 .apresentation__container{
   display: flex;
   flex-direction: column;
@@ -83,7 +130,7 @@ body{
 }
 
 .apresentation__container{
-  padding-top: 15%;
+  padding-top: 5%;
   border-bottom: thick double var(--secundary-color);
 }
 
