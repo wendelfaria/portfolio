@@ -1,0 +1,121 @@
+body{
+    height: 100vh;
+}
+
+
+#header-container{
+    height: 15vh;
+}
+
+#logo-container{
+    display: flex;
+    background-color: #201E43;
+    align-items: center;
+    justify-content: center;
+}
+#logo-container img{
+    width: 100px;
+}
+
+#menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+   background-color: #508C9B;
+   border-top: 2px solid white;
+}
+
+#menu-container ul{
+    display: flex;
+    gap: 50px;
+}
+
+#menu-container ul li a{
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;   
+}
+
+#main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    position: relative;
+}
+
+#main-container-items{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+    padding: 80px;
+}
+
+#background-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    opacity: 0.8;
+}
+
+#main-text-container{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+span.bold-style-word{
+    font-size: 42px;
+    color: #FF5733;
+}
+
+.main-text-format{
+color: white;
+font-size: 36px;
+font-weight: bold;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    gap: 50px;
+}
+
+#contact-button, #projects-button{
+    background-color: red;
+    height: 60px;
+    width: 40%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+#footer-container{
+    height: 10vh;
+    background-color: #134B70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-container p{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

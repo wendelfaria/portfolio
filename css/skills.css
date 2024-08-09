@@ -1,0 +1,105 @@
+body{
+    height: 100vh;
+}
+
+
+#header-container{
+    height: 15vh;
+}
+
+#logo-container{
+    display: flex;
+    background-color: #201E43;
+    align-items: center;
+    justify-content: center;
+}
+#logo-container img{
+    width: 100px;
+}
+
+#menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+   background-color: #508C9B;
+   border-top: 2px solid white;
+}
+
+#menu-container ul{
+    display: flex;
+    gap: 50px;
+}
+
+#menu-container ul li a{
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;   
+}
+
+#main-container--skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 75vh;
+}
+
+/* Estilização do container */
+#raccoon-container{
+    height: 400px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    animation: moveAndSpin 6s linear infinite, colorChange 1s infinite;
+    overflow: hidden;
+}
+
+
+#raccoon-container--secundary{
+    height: 200px;
+    background-color: #D4C5C0;
+    animation: colorChange 1s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#raccoon {
+    width: 350px;
+    object-fit:contain;
+    transform: translateX(10%);
+    animation: jump 0.2s linear alternate infinite;
+}
+
+@keyframes moveAndSpin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+@keyframes jump {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes colorChange {
+    0% { background-color: #ff0000; } /* Vermelho */
+    20% { background-color: #00ff00; } /* Verde */
+    40% { background-color: #0000ff; } /* Azul */
+    60% { background-color: #ffff00; } /* Amarelo */
+    80% { background-color: #ff00ff; } /* Rosa */
+    100% { background-color: #00ffff; } /* Ciano */
+}
