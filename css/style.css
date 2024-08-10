@@ -1,29 +1,42 @@
-body{
-    height: 100vh;
+:root{
+ --logo-container--color: #201E43;
+ --menu-container--color: #508C9B;
+ --menu-container--link: aliceblue;
+ --menu-container--border: white;
+ --footer-container--color: #134B70;
+ --footer-container--text-color: white;
+ --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ --font-size--link: 1.5em;
+ --font-size--footer: 1.5em;
+ --logo-size: 8em;
+ --container-size--header: 23.6vh;
+ --container-size--menu: 10vh;
+ --container-size--footer: 10vh;
+ --main-container-size--default: 66.4vh;
+
 }
 
-
 #header-container{
-    height: 15vh;
+    height: var(--container-size--header)
 }
 
 #logo-container{
     display: flex;
-    background-color: #201E43;
+    background-color: var(--logo-container--color);
     align-items: center;
     justify-content: center;
 }
 #logo-container img{
-    width: 100px;
+    width: var(--logo-size);
 }
 
 #menu-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10vh;
-   background-color: #508C9B;
-   border-top: 2px solid white;
+    height: var(--container-size--menu);
+   background-color: var(--menu-container--color);
+   border-top: 2px solid var(--menu-container--border);
 }
 
 #menu-container ul{
@@ -32,90 +45,23 @@ body{
 }
 
 #menu-container ul li a{
-    font-size: 1.5em;
+    font-size: var(--font-size--link);
     text-decoration: none;
     font-weight: bold;
-    color: aliceblue;   
-}
-
-#main-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 75vh;
-    position: relative;
-}
-
-#main-container-items{
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 100px;
-    padding: 80px;
-}
-
-#background-image{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -10;
-    opacity: 0.8;
-}
-
-#main-text-container{
-    display: flex;
-    flex-direction: column;
-    height: 20vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
-
-span.bold-style-word{
-    font-size: 42px;
-    color: #FF5733;
-}
-
-.main-text-format{
-color: white;
-font-size: 36px;
-font-weight: bold;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#button-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    gap: 50px;
-}
-
-#contact-button, #projects-button{
-    background-color: red;
-    height: 60px;
-    width: 40%;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    border-color: red;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    cursor: pointer;
+    color: var(--menu-container--link);   
 }
 
 #footer-container{
-    height: 10vh;
-    background-color: #134B70;
+    height: var(--container-size--footer);
+    background-color: var(--footer-container--color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #footer-container p{
-    font-size: 18px;
-    color: white;
+    font-size: var(--font-size--footer);
+    color: var(--footer-container--text-color);
     font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:  var(--font);
 }

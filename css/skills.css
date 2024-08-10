@@ -1,49 +1,9 @@
-body{
-    height: 100vh;
-}
-
-
-#header-container{
-    height: 15vh;
-}
-
-#logo-container{
-    display: flex;
-    background-color: #201E43;
-    align-items: center;
-    justify-content: center;
-}
-#logo-container img{
-    width: 100px;
-}
-
-#menu-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 8vh;
-   background-color: #508C9B;
-   border-top: 2px solid white;
-}
-
-#menu-container ul{
-    display: flex;
-    gap: 50px;
-}
-
-#menu-container ul li a{
-    font-size: 1.5em;
-    text-decoration: none;
-    font-weight: bold;
-    color: aliceblue;   
-}
-
 #main-container--skills{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: black;
-    height: 75vh;
+    height: var(--main-container-size--default);
 }
 
 /* Estilização do container */
