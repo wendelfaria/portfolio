@@ -1,13 +1,14 @@
 :root{
- --logo-container--color: #201E43;
- --menu-container--color: #508C9B;
+ --logo-container--color: linear-gradient(to left bottom, #201E43, black);
+ --menu-container--color: linear-gradient(to left top, #508C9B, white);
  --menu-container--link: aliceblue;
  --menu-container--border: white;
- --footer-container--color: #134B70;
+
+ --footer-container--color: linear-gradient(to left top, #134B70, black);
  --footer-container--text-color: white;
  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  --font-size--link: 1.5em;
- --font-size--footer: 1.5em;
+ --font-size--footer: 0.8em;
  --logo-size: 8em;
  --container-size--header: 23.6vh;
  --container-size--menu: 10vh;
@@ -22,7 +23,7 @@
 
 #logo-container{
     display: flex;
-    background-color: var(--logo-container--color);
+    background: var(--logo-container--color);
     align-items: center;
     justify-content: center;
 }
@@ -35,7 +36,7 @@
     align-items: center;
     justify-content: center;
     height: var(--container-size--menu);
-   background-color: var(--menu-container--color);
+   background: var(--menu-container--color);
    border-top: 2px solid var(--menu-container--border);
 }
 
@@ -51,9 +52,15 @@
     color: var(--menu-container--link);   
 }
 
+#menu-container ul li a:hover{
+    color: red;
+    transition: color 1s;
+    border-bottom: solid 3px black;    
+}
+
 #footer-container{
     height: var(--container-size--footer);
-    background-color: var(--footer-container--color);
+    background: var(--footer-container--color);
     display: flex;
     align-items: center;
     justify-content: center;

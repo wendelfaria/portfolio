@@ -6,6 +6,17 @@
     align-items: center;
     height: var(--main-container-size--default);
     position: relative;
+    overflow: hidden;
+}
+
+#main-container::after{
+    content: '';
+    position: absolute;
+    background-image: url(../assets/background-main-container.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #main-container-items{
@@ -62,4 +73,10 @@ span.bold-style-word{
     border-color: red;
     font-family: var(font-family);
     cursor: pointer;
+}
+
+#contact-button:hover, #projects-button:hover{
+    color: yellow;
+    transform: scale(1.05);
+    transition: all 0.5s;
 }
